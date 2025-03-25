@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+.row {
+    display: inline-flex;
+    gap: 80px;
+}
+
 body {
     background: #000;
     color: #fff;
@@ -142,6 +147,185 @@ button {
                     font-size: 16px;
                 }
             }
+        }
+    }
+}
+
+
+#experiencia .main__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        color: #fff;
+
+        .info {
+            width: 220px;
+
+            .fechas {
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            .lugar {
+                font-weight: 700;
+                font-size: 24px;
+                width: inherit;
+            }
+
+            .puesto {
+                @extend .fechas;
+                font-style: italic;
+            }
+        }
+
+        .division {
+            height: auto;
+            width: 2px;
+            background-color: #fff;
+        }
+
+        .detalles {
+            border-left: 2px solid #fff;
+            padding-left: 70px;
+            li {
+                font-family: 'Roboto Mono';
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+#educacion .main__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        .info {
+
+            .fechas {
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            .estudio {
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            .institucion {
+                @extend .fechas;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+#proyectos .main__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+        width: 320px;
+
+        .lugar, .tecnologias {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .proyecto_hecho {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .enlace {
+            font-family: 'Roboto Mono';
+            font-weight: 700;
+            font-size: 16px;
+            vertical-align: middle;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: #fff;
+            margin-top: 10px;
+        }
+    }
+}
+
+#testimonios {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+}
+
+#contacto {
+    .row { gap: 120px; }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+
+
+        .contacto_tipo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .contacto_info {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .contacto_enlace {
+            font-family: 'Roboto Mono';
+            font-weight: 700;
+            font-size: 16px;
+            vertical-align: middle;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: #fff;
+            margin-bottom: 30px;
         }
     }
 }

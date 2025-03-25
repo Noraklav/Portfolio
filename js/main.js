@@ -2,13 +2,17 @@ const tabs = document.querySelectorAll('.main_nav .tab')
 const allTabsContent = document.querySelectorAll('.tab_content')
 const tabActive = document.querySelector('.active')
 
+
+
+// Mostrar contenido de los tabs
 const selectTab = (show_id) => {
-    // Mostrar contenido de los tabs
     allTabsContent.forEach( e => e.classList.remove('active'))
     const id = document.querySelector(show_id)
     id.classList.add('active')
 }
 
+
+// Redirigir tabs desde un boton externo
 const selectTabFromButton = (query, id_destino) => {
     const getQuery = document.querySelector(query)
     getQuery.onclick = () => selectTab(id_destino)
